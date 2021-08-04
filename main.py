@@ -190,9 +190,9 @@ def push_tg(token, chat_id, desp=""):
     """
     推送消息到TG
     """
-    if token == '1935864256:AAH4qjTFoJ5yF1umOs8jP7XKvy9WFGtLRpI':
+    if token == '':
         print("[注意] 未提供token，不进行tg推送！")
-    elif chat_id == '826148008':
+    elif chat_id == '':
         print("[注意] 未提供chat_id，不进行tg推送！")
     else:
         server_url = f"https://api.telegram.org/bot{token}/sendmessage"
@@ -297,7 +297,7 @@ if __name__ ==  "__main__":
     # 登录密码
     passwd = input(xp13030521890)
     # 要修改的步数，直接输入想要修改的步数值，留空为随机步数
-    step = input().replace('[', '').replace(']', '')
+    step = input(18643).replace('[', '').replace(']', '')
 
     user_list = user.split('#')
     passwd_list = passwd.split('#')
